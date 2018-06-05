@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h2>Primeiros passos no GIT, GITHUB e Maven</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="github.html">O Github</a></li>
+                <li><a href="comecando_git.html">Começando a usar GIT</a></li>
+                <li><a href="comandos.html">Comandos básicos</a></li>
+                <li><a href="local_remoto.html">Como enviar o projeto local para um repositório remoto</a></li>
+                <li><a href="branches.html">Branches (Ramificações)</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Branches (Ramificações)</h1>
+            <p>
+                Quando copiamos um projeto remoto com o "git clone", é uma boa prática criar em nossa máquina uma nova branch ou seja, uma nova ramificação de desenvolvimento que não afetará a ramificação principal. Isso serve para permitir que façamos alterações à vontade, guardemos no repositório remoto, mas sem necessariamente mexermos na linha de desenvolvimento principal (branch master) que poderíamos dizer que é a oficial num projeto.
+                <br/>
+                <br/> a) git checkout -b nomeDaBranch: cria uma nova branch no repositório local.
+                <br/> b) git branch --list: lista todas as branches existentes
+                <br/> c) git push origin nomebranch: Envia a nova branch para o repositório remoto.
+                <br/>
+                <br/> Quando fazemos o procedimento acima, estamos automaticamente numa branch nova. Faça as modificações necessárias, adicione-os e comite. Para que eles sejam enviados para a branch correta, use o comando [git push https://github.com/nomegit/repo nomeDaBranch]
+                <br/>
+                <br/>
+                <h3>Merge:</h3> Para fazer merge, é preciso estar na branch que vai receber atualizações de outra ramificação de desenvolvimento. Basta utilizar o comando abaixo, não esquecendo de dar push no final. O comando abaixo realiza um merge automático de todos os arquivos diferentes entre as ramificações.
+                <br/> g) git merge nomeDaOutraBranch
+                <br/>
+                <br/>
+
+                <h3>Deletando branches:</h3> De qualquer branch, você pode deletar uma ramificação, bastando digitar os comandos abaixo de acordo com a necessidade:
+                <br/> a) git branch -d nomeDaBranch [deleta branch local]
+                <br/> b) git push origin --delete nomeDaBranch [deleta branch remota]
+            </p>
+        </article>
+
+        <footer></footer>
+
+    </div>
+
+</body>
+
+</html>
