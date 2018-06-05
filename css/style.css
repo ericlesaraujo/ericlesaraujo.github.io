@@ -1,0 +1,42 @@
+        div.container {
+			margin: 0 auto;
+            width: 90%;
+			height: 100%;
+            border: 1px solid gray;
+        }
+        
+        header,
+        footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+            font-family: Calibri;
+        }
+        
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+            font-family: Calibri;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul a {
+            text-decoration: none;
+        }
+        
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+			text-align: justify;
+            font-family: Calibri;
+        }
